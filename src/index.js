@@ -52,7 +52,7 @@
 // });
 
 import express from 'express';
-import mysql from 'mysql';
+import mysql from 'mysql2';
 import cors from 'cors';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
@@ -63,7 +63,7 @@ const port = 3000;
 // Configuración de la conexión a la base de datos MySQL
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'root',
+  user: 'fernan',
   password: 'admin',
   database: 'formulario_db',
 });

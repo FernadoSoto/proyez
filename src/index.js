@@ -51,11 +51,11 @@
 //   console.log(`Servidor en funcionamiento en el localhost`);
 // });
 
-const express = require('express');
-const mysql = require('mysql');
-const cors = require('cors');
-const { dirname, join } = require('path');
-const { fileURLToPath } = require('url');
+import express from 'express';
+import mysql from 'mysql';
+import cors from 'cors';
+import { dirname, join } from 'path';
+import { fileURLToPath } from 'url';
 
 const app = express();
 const port = 3000;
@@ -107,7 +107,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 app.use(express.static(join(__dirname, 'public')));
 
 // Set up views directory and view engine
-app.set('views', join(__dirname, '/views'));
+app.set('views', join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // Render index.ejs on root route
@@ -116,4 +116,3 @@ app.get('/', (req, res) => res.render('index.ejs'));
 app.listen(port, () => {
   console.log(`Servidor en funcionamiento en el localhost:${port}`);
 });
-

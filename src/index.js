@@ -98,7 +98,8 @@ app.post('/formulario', (req, res) => {
       res.sendStatus(500);
       return;
     }
-    console.log('Formulario enviado exitosamente');
+    console.log("Formulario enviado exitosamente");
+    res.redirect('/');
   });
 });
 

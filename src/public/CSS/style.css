@@ -1,0 +1,57 @@
+/* Estilos generales */
+
+.FORMULARIO {
+    font-family: sans-serif;
+    width: 25%;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(189, 219, 219, 0.63);
+    margin: 15px;
+    border-radius: 40px;
+  }
+  
+  .formulario_titulo {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: x-large;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  /* Estilos para etiquetas y campos de entrada */
+  label {
+    display: block;
+    margin-top: 7px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #cccccc83;
+    border-radius: 20px;
+  }
+  
+  /* Estilo para el botón de envío */
+  button[type="submit"] {
+    display: block;
+    width: 50%;
+    padding: 11px;
+    margin-top: 17px;
+    background-color: #4caf4f81;
+    color: rgba(255, 255, 255, 0.61);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #44d4e79a;
+  }
+  
+  button[type="submit"]:focus {
+    outline: none;
+  }
+  
+  
